@@ -1,0 +1,19 @@
+<template name="leaderboard">
+	<div class="leaderboard">
+		{{#each players}}
+			{{> player}}
+		{{/each}}
+	</div>
+
+	{{#if selected_name}}
+	<div class="details">
+		<div class="name">{{selected_name}}</div>
+		<div class="info">{{info}}</div>
+		<input type="button" class="inc" value="I want to take this dog for a walk!" />
+	</div>
+	{{/if}}
+
+	{{#unless selected_name}}
+	<div class="none">Click a dog to find out more</div>
+	{{/unless}}
+</template>
