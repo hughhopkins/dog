@@ -12,21 +12,26 @@ body {
 
 #outer {
     width: 600px;
-    margin: 0 auto;    
+    float: left;    
 }
 
-.player {
+#sidebar {
+    width: 300px;
+    float: right;
+}
+
+.dog {
     cursor: pointer;
     padding: 5px;
 }
 
-.player .name {
+.dog .name {
     display: inline-block;
     width: 300px;
     font-size: 1.75em;
 }
 
-.player .score {
+.dog .score {
     display: inline-block;
     width: 100px;
     text-align: right;
@@ -35,7 +40,7 @@ body {
     color: #777;
 }
 
-.player .info {
+.dog .info {
     display: inline-block;
     width: 100px;
     text-align: right;
@@ -44,11 +49,11 @@ body {
     color: #777;
 }
 
-.player.selected {
+.dog.selected {
     background-color: blue;
 }
 
-.player.selected .score {
+.dog.selected .score {
     color: black;
 }
 
