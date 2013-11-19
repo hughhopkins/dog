@@ -1,13 +1,15 @@
 <head>
-  <title>Hire A Dog!</title>
+  <title>AirHire</title>
 </head>
-
 <body>
-	<div id="outer">
-		<h1>Want to hire a dog for a day?</h1>
-			{{> postList}}
-	</div>
-	<div id="sidebar">
-		<h2>Some more details about the dog</h2>
-	</div>
+  <div class="container">
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="/">airHire</a>
+    </div>
+  </header>
+  <div id="main" class="row-fluid">
+    {{> postsList}}
+  </div>
+  </div>
 </body>

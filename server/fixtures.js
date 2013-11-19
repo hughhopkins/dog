@@ -1,22 +1,25 @@
-if (Posts.find().count() === 0) { 
-	Posts.insert({
-		dog: 'Frank',
-		breed: 'Pug',
-		url: 'http://sachagreif.com/introducing-telescope/',
-		bio: 'this dog is fucking amazing and will get you instant pussay if you take it for a walk'
-	});
-	
-	Posts.insert({
-		dog: 'Sheba',
-		breed: 'Labrodor',
-		url: 'http://sachagreif.com/introducing-telescope/',
-		bio: 'this dog is fucking amazing and will get you instant pussay if you take it for a walk'
-	});
+if (Posts.find().count() === 0) {
+  Posts.insert({
+    title: 'Sheba',
+    author: 'Lab',
+    url: 'http://sachagreif.com/introducing-telescope/'
+  });
+  
+  Posts.insert({
+    title: 'Frank',
+    author: 'Pug',
+    url: 'http://meteor.com'
+  });
+  
+  Posts.insert({
+    title: 'Jasmine',
+    author: 'Daschund',
+    url: 'http://themeteorbook.com'
+  });
 
-	Posts.insert({
-		dog: 'Jasmine',
-		breed: 'Dachsund',
-		url: 'http://sachagreif.com/introducing-telescope/',
-		bio: 'this dog is fucking amazing and will get you instant pussay if you take it for a walk'
-	});
+  Posts.insert({
+    title: 'Snoopy',
+    author: 'Terrier',
+    url: 'http://themeteorbook.com'
+  });
 }
