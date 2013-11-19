@@ -108,3 +108,7 @@ body {
   .load-more:hover {
     text-decoration: none;
     background: rgba(0, 0, 0, 0.1); }
+
+.inc {
+  cursor: pointer;
+}
