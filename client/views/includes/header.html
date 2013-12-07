@@ -9,7 +9,7 @@
 	    	<a class="brand" href="{{pathFor 'postsList'}}">doggy</a>
         	<div class="nav-collapse collapse">
         		<ul class="nav">
-        			<li><a href="{{pathFor 'postSubmit'}}">New Doggy</a></li>
+        			{{#if currentUser}}<li><a href="{{pathFor 'postSubmit'}}">New Doggy</a></li>{{/if}}
         		</ul>
         		<ul class="nav pull-right">
         			<li>{{loginButtons}}</li>
