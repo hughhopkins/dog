@@ -16,11 +16,15 @@ Template.postItem.selected = function () {
 Template.postSidebar.events({
   'click input.inc': function () {
     Posts.update(Session.get("selected_postItem"), {$inc: {score: 5}});
+    console.log("upvote - Template.postSidebar.events");
+
   }
 });
 
 Template.post.events ({
 	'click': function () {
 		Session.set("selected_postItem", this._id);
+		console.log("mouseClick - Template.post.events");
+
 	}
 });
