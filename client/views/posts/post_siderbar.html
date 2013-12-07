@@ -1,5 +1,16 @@
 <template name="postSidebar">
+	
+	{{#if selected_name}}
+	<div class="details">
+		<div class="post">{{selected_name}}</div>
+		<input type="button" value="take for a walk">
+	</div>
+	{{/if}}
+
+	{{#unless selected_name}}
 	<div>
 		<h1>Click a dog to find out more</h1>
 	</div>
+	{{/unless}}
+
 </template>

@@ -1,7 +1,9 @@
 <template name="postItem">
   <div class="post">
     <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a>{{author}}</h3>
+    	<div class="postItem {{selected}}">
+    		<h2>{{title}}</h2><h3>{{author}}</h3>
+    	</div>
     </div>
   </div>
 </template>
