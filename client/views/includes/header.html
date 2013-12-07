@@ -6,11 +6,15 @@
 	    		<span class="icon-bar"></span>
 	    		<span class="icon-bar"></span>
 	    	</a>
-	    	<a class="brand" href="{{pathFor 'postsLists'}}">doggy</a>
-        <div class="nav-collapse collapse">
-        <ul class="nav pull-right">
-        	<li>{{loginButtons}}</li>
-        </ul>
+	    	<a class="brand" href="{{pathFor 'postsList'}}">doggy</a>
+        	<div class="nav-collapse collapse">
+        		<ul class="nav">
+        			<li><a href="{{pathFor 'postSubmit'}}">New Doggy</a></li>
+        		</ul>
+        		<ul class="nav pull-right">
+        			<li>{{loginButtons}}</li>
+        		</ul>
+        	</div>
         </div>
 	</header>
 </template>
