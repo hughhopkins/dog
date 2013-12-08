@@ -1,4 +1,4 @@
-
+//not currently used to do anything:
 
 Template.leaderboard.posts = function () {
   return Posts.find({}, {sort: {score: -1, name: 1}});
