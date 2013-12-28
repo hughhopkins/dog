@@ -2,10 +2,10 @@
   <div class="post">
     <div class="post-content">
     	<div class="postItem {{selected}}">
-    		<h2>{{title}}</h2><h3>{{author}}</h3>
+    		<a href="{{pathFor 'postPage'}}"><h2>{{title}}</h2></a><h3>{{author}}</h3>
     		<p>
     			submitted by {{author}}
-    			{{#if ownPost}}<a href="pathFor 'postEdit'}}">Edit this dog</a>{{/if}}
+    			{{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit this dog</a>{{/if}}
     		</p>
     	</div>
     	<a href="{{pathFor 'postPage'}}" class="discuss btn">More Info</a>
