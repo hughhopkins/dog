@@ -1,5 +1,7 @@
 Meteor.subscribe('posts');
 
+/* none of the below works */
+
 Template.leaderboard.posts = function () {
   return Posts.find({}, {sort: {score: -1, name: 1}});
 };
