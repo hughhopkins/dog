@@ -8,3 +8,8 @@ preserve-inputs
 bootstrap
 iron-router
 spin
+<<<<<<< HEAD
+=======
+accounts-ui-bootstrap-dropdown
+accounts-password
+>>>>>>> 1dafbd3ef44eb7904d5154574929de0fae9ed2e4
