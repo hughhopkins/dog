@@ -1,9 +1,20 @@
 <template name="postItem">
   <div class="post">
     <div class="post-content">
+<<<<<<< HEAD
+    	<h2>{{title}}</h2>
+    	<h3>{{author}}</h3>
+=======
     	<div class="postItem {{selected}}">
     		<h2>{{title}}</h2><h3>{{author}}</h3>
+    		<p>
+    			submitted by {{author}}
+    			{{#if ownPost}}<a href="pathFor 'postEdit'}}">Edit this dog</a>{{/if}}
+    		</p>
     	</div>
+    	<a href="{{pathFor 'postPage'}}" class="discuss btn">More Info</a>
+>>>>>>> 1dafbd3ef44eb7904d5154574929de0fae9ed2e4
     </div>
+    <a href="{{pathFor 'postPage'}}" class="discuss btn">Discuss this</a>
   </div>
 </template>
